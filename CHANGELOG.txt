@@ -1,0 +1,13 @@
+FileFlow 2.1
+
+- Added Preview before download for generated outputs.
+- Downloads no longer start automatically after processing.
+- Added PDF preview iframe for generated PDFs.
+- Added image preview for generated images.
+- Added text/Markdown preview for text outputs.
+- Added binary-file preview information for DOCX/PPTX/XLSX and other unsupported preview types.
+- Merge PDF now supports drag-and-drop ordering plus Up/Down controls.
+- PDF to JPG now exports individual JPG files instead of a ZIP.
+- PDF to JPG supports PNG output as well, with individual download buttons.
+- PDF to PowerPoint and PDF to Excel were changed to generate blobs for the preview/download workflow instead of triggering direct downloads.
+- HTML/Word/Excel to PDF now enters the same preview workflow.
