@@ -1,4 +1,0 @@
-FileFlow 2.1
-Preview-before-download workflow
-Merge PDF ordering
-PDF-to-image individual downloads (no ZIP)
