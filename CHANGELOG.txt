@@ -1,0 +1,9 @@
+FileFlow 3.0
+
+- Fixed mobile image selection: image tools use the device file manager/gallery; camera is a separate Scan to PDF action.
+- PDF to Word now supports a high-fidelity mode with every page rendered into Word plus extracted text.
+- PDF to PowerPoint preserves each PDF page as a full-slide image.
+- PDF to Excel extracts every text fragment with page coordinates and also creates readable grouped rows.
+- Office conversions show a source-derived preview before any download.
+- PDF to image remains individual JPG/PNG downloads; no ZIP is created.
+- Existing PDF merge ordering, preview-before-download and background removal retained.

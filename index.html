@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="FileFlow browser-based PDF, image and document tools.">
+<title>FileFlow 3.0 | Complete File Toolbox</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header><a class="logo" href="#">✦ FileFlow</a><nav><a href="#tools">Tools</a><button id="theme" aria-label="Toggle dark mode">☾</button></nav></header>
+<main>
+<section class="hero">
+<div><span class="eyebrow">BROWSER FILE TOOLBOX</span><h1>Convert. Edit. Download.</h1><p>PDF, image and document utilities with browser-side processing where supported.</p><a href="#tools" class="btn">Explore all tools ↓</a></div>
+<div class="hero-box"><div class="upload-icon">↑</div><h2>Start with a file</h2><p>Choose a tool below, then drop your file into the workspace. Your files stay in the browser for the tools that support local processing.</p></div>
+</section>
+
+<section id="tools" class="section">
+<div class="head"><div><span class="eyebrow">TOOLS</span><h2>All tools</h2></div><input id="search" aria-label="Search tools" placeholder="Search tools..." autocomplete="off"></div>
+<div class="tabs"><button class="tab active" data-cat="all">All</button><button class="tab" data-cat="pdf">PDF</button><button class="tab" data-cat="convert">Convert</button><button class="tab" data-cat="edit">Edit</button><button class="tab" data-cat="security">Security</button><button class="tab" data-cat="ai">AI / Text</button><button class="tab" data-cat="image">Images</button></div>
+<div id="grid" class="grid"></div>
+</section>
+
+<section id="workspace" class="workspace hidden">
+<div class="workspace-title"><div><span class="eyebrow">WORKSPACE</span><h2 id="title"></h2><p id="desc"></p></div><button id="close" class="close" aria-label="Close tool">×</button></div>
+<div id="drop" class="drop"><div class="upload-icon">↑</div><h3>Drop files here</h3><p>or</p><div class="upload-actions"><label class="btn">Browse files<input id="input" type="file" multiple hidden></label><button id="cameraBtn" class="btn secondary hidden" type="button">Use camera</button></div><input id="cameraInput" type="file" accept="image/*" capture="environment" hidden><small id="accept"></small><small class="picker-help">On phone: Browse files opens your device file manager/gallery. Camera is a separate option for Scan to PDF.</small></div>
+<div id="files"></div><div id="options"></div><div id="result"></div>
+</section>
+</main>
+<footer>© 2026 FileFlow 2.0 · Browser-side processing is used where supported. External libraries/models are loaded on demand.</footer>
+<script src="https://cdn.jsdelivr.net/npm/pdf-lib@1.17.1/dist/pdf-lib.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
